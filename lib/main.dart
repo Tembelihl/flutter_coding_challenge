@@ -10,9 +10,17 @@ class MyApp2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.red,
+          backgroundColor: Color(0xFFFF5722),
+
+          centerTitle: false,
+          title: Container(
+            child: Image.asset('Images/Quicloc8-logo.png'),
+
+            height: 32,
+          ),
         ),
       ),
 
